@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 interface userTypeInterface {
   user: string;
-  }
+}
 
 @Component({
   selector: 'app-login-form',
@@ -19,6 +19,7 @@ export class LoginFormComponent implements OnInit{
     password: new FormControl('',[Validators.required,Validators.minLength(8)]),
     userTypeProperty: new FormControl('',[Validators.required]),
   });
+  
   users: userTypeInterface[] = [
     {user: 'Admin'},
     {user: 'Reader'},

@@ -8,11 +8,13 @@ import { HomePageAdminComponent } from './home-page-admin/home-page-admin.compon
 import { HomePageReaderComponent } from './home-page-reader/home-page-reader.component';
 import { LoginComponent } from './auth/login/login.component';
 import { DbRemoverComponent } from './db-remover/db-remover.component';
+
 const routes: Routes = [
   { path: '', component: LoginComponent },
   {path:'home-page', component:HomeComponent},
   {path:'search/:searchTerm', component:BooksPageComponent},
-  {path:'book-page-number/:tag', component:BookPageComponent},
+  {path:'tag/:tag', component:BookPageComponent},
+  {path:'book-page/:id', component:BookPageComponent},
   {path:'books-page',component:BooksPageComponent},
   {path:'db-adder',component:DbAdderComponent},
   {path:'db-remover',component:DbRemoverComponent},

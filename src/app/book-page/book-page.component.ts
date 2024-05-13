@@ -4,7 +4,7 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
 import { Book } from '../shared/models/Book';
 
 @Component({
-  selector: 'app-book-page-number',
+  selector: 'app-book-page',
   templateUrl: './book-page.component.html',
   styleUrl: './book-page.component.css'
 })
